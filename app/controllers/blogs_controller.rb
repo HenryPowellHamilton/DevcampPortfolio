@@ -44,7 +44,7 @@ class BlogsController < ApplicationController
       if @blog.update(blog_params)
         format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
         format.json { render :show, status: :ok, location: @blog }
-      else
+      elseportfolio_item
         format.html { render :edit }
         format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
