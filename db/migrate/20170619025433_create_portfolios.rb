@@ -1,0 +1,14 @@
+class CreatePortfolios < ActiveRecord::Migration[5.1]
+  def change
+    create_table :portfolios do |t|
+      t.string :title
+      t.string :subtitle
+      t.string :body
+      t.string :text
+      t.text :main_image
+      t.text :thumb_image
+
+      t.timestamps
+    end
+  end
+end
