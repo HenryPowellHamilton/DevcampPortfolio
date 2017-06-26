@@ -28,3 +28,9 @@ end
             thumb_image: "http://via.placeholder.com/350x200"
             )
         end
+        
+    3.times do ||technology
+            Portfolio.last.technologies.create!(
+            name: "technology #{technology}"
+            )
+    end
