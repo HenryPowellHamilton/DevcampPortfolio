@@ -11,9 +11,11 @@
     </tr>
   </thead>
 
+<hr>
+
   <tbody>
     <% @blogs.each do |blog| %>
-      <tr>
+      </tr>
         <td><%= blog.title %></td>
         <td><%= blog.body %></td>
         <td><%= link_to blog.status, toggle_status_blog_path(blog) %></td>
