@@ -1,11 +1,15 @@
 <h2>HomePage</h2>
 
-<h1>hi <%= current_user.first_name if current_user %></h1>
+<h1>hi <%= current_user.first_name %></h1>
 
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<hr>
 
 <h1>posts</h1>
 <%= @posts.inspect %>
 
+<hr>
+    
 <h1>skills</h1>
 <%= @skills.inspect %>
