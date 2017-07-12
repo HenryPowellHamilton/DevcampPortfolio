@@ -8,8 +8,4 @@ module ApplicationHelper
       (link_to "Login", new_user_session_path)
     end
   end
-
-  def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
-  end
 end
