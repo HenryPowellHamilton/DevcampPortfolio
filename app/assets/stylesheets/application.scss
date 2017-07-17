@@ -160,7 +160,32 @@
      width: 55rem;
    }
  }
+ 
+  /*
+  * custom styles
+  */
 
 .green {
     color:#009933;
+}
+
+.brown {
+    color:#996633;
+}
+
+.blue {
+    color:#0000ff;
+}
+
+.red {
+    color:#ff0000;
+}
+
+.card-block {
+    color:black;
+    text-align: left;
+}
+
+.auth-links a {
+    color:#ff0000;
 }
