@@ -19,22 +19,17 @@
     <!-- start of blog header -->
     <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
+        <h1 class="blog-title">A Blog</h1>
         <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
       </div>
     </div>
     <!-- end of blog header -->
 
-    <!-- start of container and row element -->
     <div class="container">
         
       <div class="row">
-    <!-- start of container and row element -->
-          
-          
-          
-        <%= login_helper %>
-          
+
         <%= yield %>
             
         <!-- start of sidebar -->
@@ -46,18 +41,18 @@
           <div class="sidebar-module">
             <h4>Archives</h4>
             <ol class="list-unstyled">
-              <li><a href="#">March 2014</a></li>
-              <li><a href="#">February 2014</a></li>
-              <li><a href="#">January 2014</a></li>
-              <li><a href="#">December 2013</a></li>
-              <li><a href="#">November 2013</a></li>
-              <li><a href="#">October 2013</a></li>
-              <li><a href="#">September 2013</a></li>
-              <li><a href="#">August 2013</a></li>
-              <li><a href="#">July 2013</a></li>
-              <li><a href="#">June 2013</a></li>
-              <li><a href="#">May 2013</a></li>
-              <li><a href="#">April 2013</a></li>
+              <li><a href="#">March 2018</a></li>
+              <li><a href="#">February 2018</a></li>
+              <li><a href="#">January 2018</a></li>
+              <li><a href="#">December 2017</a></li>
+              <li><a href="#">November 2017</a></li>
+              <li><a href="#">October 2017</a></li>
+              <li><a href="#">September 2017</a></li>
+              <li><a href="#">August 2017</a></li>
+              <li><a href="#">July 2017</a></li>
+              <li><a href="#">June 2017</a></li>
+              <li><a href="#">May 2017</a></li>
+              <li><a href="#">April 2017</a></li>
             </ol>
           </div>
           <div class="sidebar-module">
@@ -79,7 +74,6 @@
         </footer>
         <!-- end of footer -->
       
-    <%= render "shared/nav", location: 'bottom' %>
       </div>
     </div>
   </body>
